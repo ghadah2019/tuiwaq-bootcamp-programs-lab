@@ -1,41 +1,102 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.cards-title {
+  height: 6rem;
+  width: 16rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: 18px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.cards-timeAndlocation {
+  height: 1.25rem;
+  width: 16rem;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+  line-height: 24px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.cards-palce {
+  margin: 0 1rem;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+
+.cards-time {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.cards-startTimeandButton {
+  height: 2.75rem;
+  width: 16rem;
+  margin: 1rem 0;
+}
+
+.cards-icon-start {
+  margin: 0 1rem;
+  font-size: 12px;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.cards-btn-details {
+  height: 1.75rem;
+  width: 6rem;
+  border: 1px solid #91d8db;
+  background-color: #ffffff;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.cards-btn-details:hover {
+  background-color: #91d8db;
+  color: #f5f6fa;
+  font-size: 16px;
+}
+.purpleBtn {
+  border: 1px solid #abadf5;
+  background-color: #ffffff;
+}
+.purpleBtn:hover {
+  background-color: #abadf5;
+  color: #f5f6fa;
+  font-size: 16px;
+}
+.purple {
+  color: #abadf5;
+}
+.gray {
+  color: #b4b4b4;
+}
+.grayBtn {
+  border: 1px solid #706e6e;
+  background-color: #b4b4b465;
+}
+.grayBtn:hover {
+  background-color: #b4b4b465;
+  color: #706e6e;
+}
+
+@media (max-width: 767px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 575px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
-}
-
-.card {
-  padding: 2em;
-}
 
 .read-the-docs {
   color: #888;
@@ -100,6 +161,7 @@
   background-color:  #4F3797;
   color: white;
   border: none;
+
 
 
 

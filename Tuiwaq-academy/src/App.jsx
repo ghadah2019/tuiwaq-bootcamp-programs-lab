@@ -1,17 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+
+import Cardss from './componet/Cardss'
+
+
 import Nav from './componants/Nav'
 import Sectiontwo from './componants/Sectiontwo'
 import Footer from './componants/Footer'
 import About from './componants/About'
 
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+
+    <div className="cards-container">
+
+   <Cardss name="برنامج" title="تهيئة المجموعات الإنتاجية باستخدام Red Hat OpenShift II "  place="الرياض" time="اسبوع واحد" start="يبدأ في 11\26\2023" btn="التفاصيل" ></Cardss>
+   <Cardss name="برنامج" title="تهيئة المجموعات الإنتاجية باستخدام Red Hat OpenShift II "  place="الرياض" time="اسبوع واحد" start="يبدأ في 11\26\2023" btn="التفاصيل" ></Cardss> <Cardss name="برنامج" title="تهيئة المجموعات الإنتاجية باستخدام Red Hat OpenShift II "  place="الرياض" time="اسبوع واحد" start="يبدأ في 11\26\2023" btn="التفاصيل" ></Cardss> <Cardss name="معسكر" title="تهيئة المجموعات الإنتاجية باستخدام Red Hat OpenShift II "  place="الرياض" time="اسبوع واحد" start="يبدأ في 11\26\2023" btn="التفاصييل" ></Cardss> <Cardss name="معسكر" title="تهيئة المجموعات الإنتاجية باستخدام Red Hat OpenShift II "  place="الرياض" time="اسبوع واحد" start="يبدأ في 11\26\2023" btn="التفاصييل" ></Cardss>
+   <Cardss name="مغلق" title="تهيئة المجموعات الإنتاجية باستخدام Red Hat OpenShift II "  place="الرياض" time="اسبوع واحد" start="يبدأ في 11\26\2023" btn="مغلق" ></Cardss>
+   </div>
+    </>
+    
+
   <div className='div-row'>
     <Nav src="./assets/Tuiwaq-academy/src/assets/tuiawq-removebg-preview.png" main="الرئيسية" bootcamps="المعسكرات والبرامج" about="حول الأكاديمية" academies="الأكاديميات التابعة" test_center="مركز الإختبارات" signin="
 تسجيل الدخول" />
@@ -26,6 +37,7 @@ function App() {
   </div>
   <About signin= "خطوات التسجيل"/>
     </>
+
 
   )
 }
