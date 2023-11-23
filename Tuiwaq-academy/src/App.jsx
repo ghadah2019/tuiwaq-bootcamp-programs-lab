@@ -2,33 +2,31 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Nav from './componants/Nav'
+import Sectiontwo from './componants/Sectiontwo'
+import Footer from './componants/Footer'
+import About from './componants/About'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+  <div className='div-row'>
+    <Nav src="./assets/Tuiwaq-academy/src/assets/tuiawq-removebg-preview.png" main="الرئيسية" bootcamps="المعسكرات والبرامج" about="حول الأكاديمية" academies="الأكاديميات التابعة" test_center="مركز الإختبارات" signin="
+تسجيل الدخول" />
+  </div>
+  
+  <div>
+    <Sectiontwo young="الناشئين" olders="الكبار" bootcamps_programs="المعسكرات والبرامج" />
+  </div>
+
+  <div className='diiv-row'>
+    <Footer trainee="شارك كمتدرب" academy="حول الأكاديمية" condition="الشروط والسياسه" privacy="سياسة الخصوصية" twitter="@TuwaiqAcademy" h1="جميع الحقوق محفوظة لأكاديمية طويق 2023"/>
+  </div>
+  <About signin= "خطوات التسجيل"/>
     </>
+
   )
 }
 
